@@ -1,8 +1,10 @@
 // import javax.swing.JFrame;
 import javax.swing.ImageIcon;
 import javax.swing.JLabel;
+import javax.swing.BorderFactory;
 import java.awt.Color;
 import java.awt.Font;
+
 
 public class Main {
     public static void main(String[] args) {
@@ -39,11 +41,21 @@ public class Main {
         label.setFont(new Font("MV Boli", Font.PLAIN, 50)); //sets the font of the label
         // label.setIconTextGap(-10); //sets the gap between the text and the image icon
 
-        /*
-        // SEMUA DAERAH JADI BACKGROUNG (NANTI BISA DIATUR)
+        
+        // SEMUA DAERAH JADI BACKGROUNG (Pake Layout Manager)
         label.setBackground(Color.black); //sets the background color of the label
         label.setOpaque(true); //display label background
-        */
+        
     
+        label.setBorder(BorderFactory.createLineBorder(Color.green) ); //creates a border around the label
+        label.setVerticalAlignment(JLabel.CENTER); //sets vertical position of the label
+        label.setHorizontalAlignment(JLabel.CENTER); //sets horizontal position of the label
+
+        // myFrame.setLayout(null); //sets the layout manager
+        // Label harus diatur manual posisinya
+        // label.setBounds(125,125,750,750); //sets the x and y position, as well as the width and height
+        
+        // Pakai frame.pack() untuk mengatur posisi, ukuran label and ukuran frame secara otomatis
+        myFrame.pack();
     }
 }

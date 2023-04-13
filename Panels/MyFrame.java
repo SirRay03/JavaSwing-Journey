@@ -8,8 +8,9 @@ public class MyFrame extends JFrame {
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); //makes sure program exits when frame closes
         this.setResizable(true); //prevents frame from being resized (false)
         // Kalau pake pack() gaperlu setSize()
-        // this.setSize(1000,1000); //sets the x-dimension, and y-dimension of the frame
+        this.setSize(1000,1000); //sets the x-dimension, and y-dimension of the frame
         this.setVisible(true); //makes frame visible
+        this.setLayout(null); //allows us to manually set the position of each component
 
         ImageIcon image = new ImageIcon("/plumbob.png"); //create an image icon
         this.setIconImage(image.getImage()); //change icon of frame
