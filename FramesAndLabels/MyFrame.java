@@ -6,8 +6,8 @@ public class MyFrame extends JFrame {
     MyFrame() {
         this.setTitle("My First frame"); //sets title of the frame
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); //makes sure program exits when frame closes
-        this.setResizable(false); //prevents frame from being resized
-        this.setSize(420,420); //sets the x-dimension, and y-dimension of the frame
+        this.setResizable(true); //prevents frame from being resized (false)
+        this.setSize(500,1000); //sets the x-dimension, and y-dimension of the frame
         this.setVisible(true); //makes frame visible
 
         ImageIcon image = new ImageIcon("/plumbob.png"); //create an image icon
