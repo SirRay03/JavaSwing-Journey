@@ -4,5 +4,7 @@ public class Main {
         //                  an Action
         // KeyStroke =      key + modifier (alt, ctrl, shift, meta, 
         //                  altGraph, button1, button2, button3)
+    
+        Game game = new Game();
     }
 }
