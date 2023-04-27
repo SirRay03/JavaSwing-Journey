@@ -1,8 +1,5 @@
 import javax.swing.JOptionPane;
 
-import java.awt.*;
-import javax.swing.*;
-
 public class Main {
     public static void main(String[] args){
         // JOptionPane =pop up a standard dialog box that prompts 
